@@ -1,0 +1,226 @@
+/* リセットCSS */
+.body {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif; /* 書体もリセットしています。不要であれば削除を */
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* iOSタップ時の挙動を調整 */
+  }
+
+/* 黒点消し */
+li {
+    list-style: none;
+}
+/* 名前 */
+.name_err_sei {
+    display: none;
+    color: #F00;
+}
+
+.name_err_mei {
+    display: none;
+    color: #F00;
+}
+
+/* 会社 */
+.company_err_name {
+    display: none;
+    color: #F00;
+}
+
+.company_err_department {
+    display: none;
+    color: #F00;
+}
+
+/* メールアドレス */
+.email_err_name {
+    display: none;
+    color: #F00;
+}
+
+.email_err_format {
+    display: none;
+    color: #F00;
+}
+
+/* 電話番号 */ 
+.tel_err {
+    display: none;
+    color: #F00;
+}
+
+.tel_err_format {
+    display: none;
+    color: #F00;
+}
+
+.zip_err_name {
+    display: none;
+    color: #F00;
+}
+
+/* 都道府県 */
+.perfectures_err {
+    display: none;
+    color: #F00; 
+}
+
+/* item */
+.item_err {
+    display: none;
+    color: #F00;
+}
+
+/* アンケート */
+.favorite li {
+    display: none;
+}
+
+#active {
+    display: block;
+}
+
+
+
+/* -------------全体レイアウト----------------- */
+body {
+    background: #F0F8FF;
+  }
+  
+  .qa {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    min-width: 800px;
+    line-height: 120%;
+    height: auto;
+  }
+  
+ /* テキストボックス装飾 */
+  ul {
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+    display: inline-block;
+  }
+  
+  ul > li {
+    width: 35% !important;
+    line-height: 30px;
+    display: inline-block;
+  }
+  
+  ul > li > input {
+    box-sizing: border-box;
+    width: 250px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: solid 2px #888888;
+    display: inline-block;
+  }
+  
+  
+  
+  /* チェックボックス装飾 */
+  form#form1 {
+    margin-left: 20px;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  input[type*="checkbox"] {
+    margin-left: 20px !important;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: solid 2px #888888;
+    background: #F5F5F5 !important;
+    border-radius: 4px;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  input[type*="checkbox"]:checked {
+      appearance: none;
+      background-color: #FFF !important;
+  }
+
+  input[type*="checkbox"]:checked::before {
+    content: '';
+    width: 18px;
+    height: 8px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: rotate(-45deg);
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+  }
+  
+  form#form1::hover > input[type*="checkbox"] {
+    background: #DDDDDD !important;
+    border: solid 2px #333333;
+  }
+  
+
+  /* 送信ボタン */
+  input#submit_btn {
+    display: inline-block;
+    border-radius: 5%;
+    font-size: 18pt;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px 100px;
+    background: #000066 !important;
+    color: #ffffff;
+    line-height: 1em;
+    transition: .3s;
+    box-shadow: 6px 6px 3px #666666;
+    border: 2px solid #000066;
+    margin: 0 auto;
+}
+
+ul.button {
+    padding-top: 45px;
+    text-align: center;
+}
+
+/* 電話番号のデザイン */
+li.tel_list > input {
+    width: 92px;
+}
+
+li.tel_list {
+    width: 500px !important;
+}
+
+/* 都道府県のデザイン */
+select#perfectures_id {
+    margin-left: 20px;
+    width: 250px;
+    height: 35px;
+    border: solid 2px #888888;
+}
+

@@ -1,0 +1,114 @@
+<html>
+    <meta content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="./../CSS/otoiwase.css">
+    <title>お問い合わせフォーム</title>
+    <head>お問い合わせ</head>
+    <body>
+        <div class="qa">
+          <ul class="name">
+              <h3>お名前</h3>
+              <h4 class="name_err_sei">お名前(姓)が入力されておりません。または正しい形式で入力してください。</h4>
+              <h4 class="name_err_mei">お名前(名)が入力されておりません。または正しい形式で入力してください。</h4>
+              <li>
+                  <input type="text" class="name_sei" data-flg="0">
+              </li>
+              <li>
+                  <input type="text" class="name_mei" data-flg="0">
+              </li>
+          </ul>
+          <ul class="company">
+              <h3>会社名・部署名</h3>
+              <h4 class="company_err_name">会社名が入力されておりません。</h4>
+              <li>
+                  <input type="text" class="company_name" data-flg="0">
+              </li>
+              <h4 class="company_err_department">部署名が入力されておりません。</h4>
+              <li>   
+                  <input type="text" class="department_name" data-flg="0">
+              </li>
+          </ul>
+          <ul class="email">
+              <h3>メールアドレス</h3>
+              <h4 class="email_err_name">メールアドレスが入力されていません。</h4>
+              <h4 class="email_err_format">形式が異なります。</h4>
+              <li>
+                  <input type="text" class="mail_address" data-flg="0">
+              </li>
+          </ul>
+          <ul class="zip">
+            <h3>郵便番号</h3>
+            <h4 class="zip_err_name">郵便番号が入力されていません。</h4>
+            <li>
+                <input type="text" id="zip_number" data-flg="0">
+            </li>
+            <h3>住所</h3>
+            <li>
+                <input type="text" id="address" data-flg="0">
+            </li>
+          </ul>
+          <ul class="tel">
+              <h3>電話番号</h3>
+              <h4 class="tel_err">電話番号が入力されていません。</h4>
+              <h4 class="tel_err_format">固定電話10桁〜携帯電話11桁の数値を入力してください。</h4>
+              <li class="tel_list" data-flg="0">
+                  <input type="text" class="tel_title" data-flg="0">
+                  <input type="text" class="tel_title">
+                  <input type="text" class="tel_title">
+              </li>
+          </ul>
+          <ul class="perfectures">
+              <h3>都道府県</h3>
+              <h4 class="perfectures_err">都道府県を選択してください。</h4>
+              <select name="perfectures_name" id="perfectures_id" data-flg="0">
+                  <option value=""></option>
+                  <option value="北海道">北海道</option>
+                  <option value="青森">青森</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="東京">東京</option>
+              </select>
+          </ul>
+          <ul class="item">
+              <h3>対象商品</h3>
+              <h4 class="item_err">対象商品を選択してください。</h4>
+              <form id="form1" data-flg="0">
+                  <input type="checkbox" name="item" value="1" class="itembox"><span>枕</span>
+                  <input type="checkbox" name="item" value="2" class="itembox"><span>布団</span>
+                  <input type="checkbox" name="item" value="3" class="itembox"><span>毛布</span>
+                  <input type="checkbox" name="item" value="4" class="itembox"><span>シーツ</span>
+              </form>
+            </ul>
+            <div class="compnynum" id="compnynum">
+                <h3>社員番号</h3>
+                <ul>
+                    <li>
+                      <input type="text" name="companyNum" value="" class="companyNum">
+                    </li>
+                </ul>
+            </div>
+            <div class="compnynumConfilm" id="compnynumConfilm">
+                <h3>社員番号(英数字)</h3>
+                <ul>
+                    <li>
+                      <input type="text" name="companyNumConfilm" value="" class="companyNumConfilm">
+                    </li>
+                </ul>
+            </div>
+
+              <div><span class="bar">0<span>%</div>   
+            </div>
+            <ul class="button">
+                  <input type="button" class="submit_btn" id="submit_btn" value="送信">
+            </ul>
+          <div class="favorite" id="favorite">
+              <h3>アンケート<span class="plus">＋</span></h3>
+              <ul>
+                  <li>
+                    <input type="radio" name="favoriteItem" value="1" class="favoriteItem"><span>テレビ</span> 
+                    <input type="radio" name="favoriteItem" value="2" class="favoriteItem"><span>雑誌</span> 
+                    <input type="radio" name="favoriteItem" value="3" class="favoriteItem"><span>友人からの紹介</span> 
+                  </li>
+              </ul>
+          </div>
+    </body>
+    <script src="./../JS/otoiwase.js"></script>
+</html>
